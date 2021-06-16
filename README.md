@@ -11,3 +11,11 @@ Crop işleminde Jcrop bileşeni kullanılşmıştır. Bu bileşene ait css ve ja
 Bizim yazdığımız scriptler "Content/js/upload-crop-script.js" dosyasında yer almaktadır.
 
 Uygulama resmi kırpar ve kırpılmış resmi ekrana getirir.
+
+
+
+![Screenshot](http://www.ibrahimarac.com/gitimages/uploadcrop/crop-1.png)
+
+![Screenshot](http://www.ibrahimarac.com/gitimages/uploadcrop/crop-2.png)
+
+![Screenshot](http://www.ibrahimarac.com/gitimages/uploadcrop/crop-3.png)
