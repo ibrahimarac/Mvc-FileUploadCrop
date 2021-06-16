@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@model ImageCrop_Upload.Models.PostedFile
+
+<h2>Resim Yükle</h2>
+
+<form method="post"  enctype="multipart/form-data" action="@Url.Action("Index","Upload")">
+
+    @Html.HiddenFor(m=>m.Width)
+    @Html.HiddenFor(m => m.Height)
+    @Html.HiddenFor(m => m.X)
+    @Html.HiddenFor(m => m.Y)
+    @Html.HiddenFor(m => m.CropAreaWidth)
+    @Html.HiddenFor(m => m.CropAreaHeight)
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <input type="file" id="File" name="File" class="btn btn-success" />
+            </div>
+            <div class="col-md-4" id="preview" style="display:none">
+                
+                <div class="caption">
+                    <a href="#" id="deletePreview">
+                        <i class="fa fa-trash"></i>
+                    </a>
+                    <span class="description"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="submit" id="submit" value="Yükle" style="display:none" class="btn btn-success" />
+            </div>            
+        </div>
+    </div>
+</form>
+
+
